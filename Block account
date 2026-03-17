@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Status</title>
+    <style>
+        /* Темный фон и сброс отступов */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0a0a0a;
+            color: #ff0000; /* Красный цвет текста */
+            font-family: 'Courier New', Courier, monospace; /* "Хакерский" шрифт */
+            overflow: hidden;
+        }
+
+        /* Стиль фразы */
+        h1 {
+            font-size: 5rem;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+            animation: blink 1.5s infinite;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Анимация мерцания */
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* Адаптивность для телефонов */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; letter-spacing: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Вы взломаны</h1>
+
+</body>
+</html>
